@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HØK — Heart of Khaos</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050505;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Background glow */
+body::before {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background: #8b001f;
+    filter: blur(180px);
+    opacity: 0.18;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 25px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background: rgba(5,5,5,0.65);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #b0002a;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff1744;
+}
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.small-title {
+    color: #b0002a;
+    letter-spacing: 8px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(80px, 20vw, 190px);
+    letter-spacing: 15px;
+    line-height: 0.9;
+    text-shadow: 0 0 40px rgba(180,0,40,0.35);
+}
+
+.subtitle {
+    margin-top: 30px;
+    color: #999;
+    letter-spacing: 6px;
+    font-size: 13px;
+}
+
+.enter {
+    margin-top: 45px;
+    padding: 15px 35px;
+    border: 1px solid #8b0025;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.enter:hover {
+    background: #8b0025;
+    box-shadow: 0 0 30px rgba(180,0,40,0.4);
+}
+
+/* Sections */
+section {
+    min-height: 80vh;
+    padding: 120px 10%;
+    border-top: 1px solid #151515;
+}
+
+.section-title {
+    color: #b0002a;
+    letter-spacing: 5px;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+section h2 {
+    font-size: clamp(35px, 7vw, 70px);
+    margin-bottom: 25px;
+}
+
+section p {
+    max-width: 650px;
+    color: #888;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.links {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    border: 1px solid #222;
+    padding: 15px 25px;
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    border-color: #b0002a;
+    color: white;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid #151515;
+    color: #555;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">HØK</div>
+
+    <div>
+        <a href="#about">ABOUT</a>
+        <a href="#links">LINKS</a>
+    </div>
+</nav>
+
+<main>
+
+<section class="hero">
+
+    <div class="small-title">WELCOME TO THE CHAOS</div>
+
+    <h1>HØK</h1>
+
+    <div class="subtitle">HEART OF KHAOS</div>
+
+    <a class="enter" href="#about">ENTER</a>
+
+</section>
+
+<section id="about">
+
+    <div class="section-title">01 — ABOUT</div>
+
+    <h2>Heart of Khaos.</h2>
+
+    <p>
+        Welcome to HØK.
+        A digital space built around chaos, creativity,
+        darkness and individuality.
+        This place is only the beginning.
+    </p>
+
+</section>
+
+<section id="links">
+
+    <div class="section-title">02 — LINKS</div>
+
+    <h2>Find HØK.</h2>
+
+    <p>
+        Follow the journey and discover what's coming next.
+    </p>
+
+    <div class="links">
+        <a href="#">TIKTOK</a>
+        <a href="#">INSTAGRAM</a>
+        <a href="#">YOUTUBE</a>
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    HØK — HEART OF KHAOS
+</footer>
+
+</body>
+</html>
